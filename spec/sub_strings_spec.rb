@@ -5,7 +5,8 @@ RSpec.describe 'Sub String' do
     let(:dictionary) do
       ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
     end
-    xit 'finds words in another word' do
+
+    it 'finds words in another word' do
       string = 'below'
       expected_output = {"below" => 1, "low" => 1}
       expect(sub_string_finder(string, dictionary)).to eq(expected_output)

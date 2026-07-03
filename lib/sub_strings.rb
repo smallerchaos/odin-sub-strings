@@ -2,7 +2,7 @@ def sub_string_finder(string, dictionary)
   results_hash = Hash.new(0)
 
   # Break the string into an array of characters
-  string_array = string.chars
+  string_array = string.downcase.chars
 
   puts "#{string} was passed in to examine"
   puts string_array
